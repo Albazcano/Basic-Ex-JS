@@ -1,28 +1,34 @@
 const button = document.getElementById('boton');
+const parent = document.getElementById('parent');
 
 button.addEventListener("click", nota);
-// console.log("He realizado mi examen.");
 
-// Condición
-export function nota() {
-    let nota= document.getElementById('nota').value;
+export function nota() 
+{
 
-    if (nota < 3 && nota > 0) {
-      console.log("Muy Deficiente");
-    } else if (nota < 5){
-      console.log("Insuficiente");
-    }else if (nota < 6) {
-      console.log ("Suficiente");
-    } else if (nota < 7) {
-      console.log("Bien");
-    } else if (nota < 9) {
-      console.log("Notable");
-    } else if (nota <=10) {
-      console.log ("Sobresaliente");
-    } else {
-      console.log('Nota inválida')
-    }
+let nota= document.getElementById('nota').value;
+let result = document.createElement('p');
+
+  if (nota < 3 && nota > 0) {
+    result.innerHTML("Muy Deficiente");
+    parent.appendChild(result);
+  } else if (nota < 5){
+    result.innerHTML("Insuficiente");
+    parent.appendChild(result);
+  }else if (nota < 6) {
+    result.innerHTML("Suficiente");
+    parent.appendChild(result);
+  } else if (nota < 7) {
+    result.innerHTML("Bien");
+    parent.appendChild(result);
+  } else if (nota < 9) {
+    result.innerHTML("Notable");
+    parent.appendChild(result);
+  } else if (nota <=10) {
+    result.innerHTML("Sobresaliente");
+    parent.appendChild(result);
+  } else {
+    result.innerHTMLt('Nota inválida')
+    parent.appendChild(result);
+  }
 }
-
-
-// console.log("He obtenido un", calificacion);
