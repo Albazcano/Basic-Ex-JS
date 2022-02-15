@@ -9,18 +9,9 @@ Javascript
 
 - node.js & npm
 
-## Dependencies
-
-- jest
-
 ## Installation
 
 >> npm install
-
-
-## Run tests
-
->> npx jest
 
 ## Retos
 1. Escribe un programa que escriba en la pantalla un texto que diga “Hello World”.
